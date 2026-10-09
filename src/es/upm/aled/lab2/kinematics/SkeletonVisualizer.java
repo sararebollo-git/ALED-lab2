@@ -34,28 +34,28 @@ public class SkeletonVisualizer {
 		Segment hip = new Segment(0, Math.toRadians(0));
 		// Torso
 		Segment torso = new Segment(120, Math.toRadians(-90)); // Upwards, in screen coordinates, Y is down
-		hip.addChild(torso);
+		hip.addChildren(torso);
 		// Neck
 		Segment neck = new Segment(40, Math.toRadians(0));
-		torso.addChild(neck);
+		torso.addChildren(neck);
 		// Arms
 		Segment leftUpperArm = new Segment(80, Math.toRadians(90));
 		Segment rightUpperArm = new Segment(80, Math.toRadians(-90));
-		torso.addChild(leftUpperArm);
-		torso.addChild(rightUpperArm);
+		torso.addChildren(leftUpperArm);
+		torso.addChildren(rightUpperArm);
 		Segment leftForearm = new Segment(70, Math.toRadians(-20));
 		Segment rightForearm = new Segment(70, Math.toRadians(20));
-		leftUpperArm.addChild(leftForearm);
-		rightUpperArm.addChild(rightForearm);
+		leftUpperArm.addChildren(leftForearm);
+		rightUpperArm.addChildren(rightForearm);
 		// Legs
 		Segment leftThigh = new Segment(100, Math.toRadians(120));
 		Segment rightThigh = new Segment(100, Math.toRadians(60));
-		hip.addChild(leftThigh);
-		hip.addChild(rightThigh);
+		hip.addChildren(leftThigh);
+		hip.addChildren(rightThigh);
 		Segment leftCalf = new Segment(90, Math.toRadians(10));
 		Segment rightCalf = new Segment(90, Math.toRadians(-10));
-		leftThigh.addChild(leftCalf);
-		rightThigh.addChild(rightCalf);
+		leftThigh.addChildren(leftCalf);
+		rightThigh.addChildren(rightCalf);
 
 		// Exoskeleton drawing
 		SkeletonPanel panel = new SkeletonPanel(hip, 600, 600);
