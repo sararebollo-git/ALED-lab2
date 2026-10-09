@@ -3,8 +3,6 @@ package es.upm.aled.lab2.kinematics;
 import java.util.ArrayList;
 import java.util.List;
 
-import es.upm.aled.lab2.gui.Node;
-
 // TODO: Implemente la clase
 public class Segment {
 	private double length;
@@ -37,5 +35,5 @@ public class Segment {
 		if (!children.contains(child))
 			children.add(child);
 	}
-
+	
 }
