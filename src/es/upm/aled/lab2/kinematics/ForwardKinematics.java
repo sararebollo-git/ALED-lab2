@@ -52,7 +52,7 @@ public class ForwardKinematics {
 			long runningTime = System.nanoTime() - startTime;
 			System.out.println("Tiempo de computePositions para un segmento con "
 			+ link.getChildren().size() + " hijos: "
-			+ runningTime + " nanosegundos");
+			+ runningTime + " nanosegundos"); 
 			return node;
 		}
 	}
